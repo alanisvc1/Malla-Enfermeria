@@ -24,8 +24,47 @@ const ramosPorSemestre = {
     { codigo: "ENFEC003", nombre: "Educación en salud", requisitos: ["ENFEA001"] },
     { codigo: "FILS0001", nombre: "Antropología", requisitos: [] },
     { codigo: "FORMINT2", nombre: "Formación integral II", requisitos: ["FORMINT1"] }
-  ]
+  ],
+ "2° Año - 2° Semestre": [
+    { codigo: "ENFEC004", nombre: "Cuidados básicos de enfermería", requisitos: ["ENFEC002"] },
+    { codigo: "ENFEC005", nombre: "Taller de habilidades clínicas I", requisitos: ["ENFEC002"] },
+    { codigo: "ENFEC006", nombre: "Enfermería en salud pública", requisitos: ["ENFEC003"] },
+    { codigo: "ENFEC007", nombre: "Investigación en salud I", requisitos: [] },
+    { codigo: "FORMINT3", nombre: "Formación integral III", requisitos: ["FORMINT2"] }
+  ],
+  "3° Año - 1° Semestre": [
+    { codigo: "ENFED001", nombre: "Enfermería en el ciclo vital II", requisitos: ["ENFEC004"] },
+    { codigo: "ENFED002", nombre: "Taller de habilidades clínicas II", requisitos: ["ENFEC005"] },
+    { codigo: "ENFED003", nombre: "Enfermería en salud mental y psiquiatría", requisitos: [] },
+    { codigo: "ENFED004", nombre: "Investigación en salud II", requisitos: ["ENFEC007"] },
+    { codigo: "FORMINT4", nombre: "Formación integral IV", requisitos: ["FORMINT3"] }
+  ],
+  "3° Año - 2° Semestre": [
+    { codigo: "ENFED005", nombre: "Enfermería médico quirúrgica I", requisitos: ["ENFEC004"] },
+    { codigo: "ENFED006", nombre: "Internado médico quirúrgico I", requisitos: ["ENFEC004"] },
+    { codigo: "ENFED007", nombre: "Gestión del cuidado en enfermería", requisitos: [] },
+    { codigo: "FORMINT5", nombre: "Formación integral V", requisitos: ["FORMINT4"] }
+  ],
+  "4° Año - 1° Semestre": [
+    { codigo: "ENFEE001", nombre: "Enfermería médico quirúrgica II", requisitos: ["ENFED005"] },
+    { codigo: "ENFEE002", nombre: "Internado médico quirúrgico II", requisitos: ["ENFED006"] },
+    { codigo: "ENFEE003", nombre: "Seminario de investigación", requisitos: ["ENFED004"] },
+    { codigo: "FORMINT6", nombre: "Formación integral VI", requisitos: ["FORMINT5"] }
+  ],
+  "4° Año - 2° Semestre": [
+    { codigo: "ENFEE004", nombre: "Enfermería en pediatría", requisitos: ["ENFEE001"] },
+    { codigo: "ENFEE005", nombre: "Internado en pediatría", requisitos: ["ENFEE002"] },
+    { codigo: "ENFEE006", nombre: "Gestión del cuidado avanzado", requisitos: ["ENFED007"] },
+    { codigo: "ENFEE007", nombre: "Ética profesional", requisitos: [] }
+  ],
+  "5° Año - 1° Semestre": [
+    { codigo: "ENFEF001", nombre: "Internado en salud mental", requisitos: ["ENFED003"] },
+    { codigo: "ENFEF002", nombre: "Internado en salud pública", requisitos: ["ENFEC006"] },
+    { codigo: "ENFEF003", nombre: "Gestión del cuidado final", requisitos: ["ENFEE006"] },
+    { codigo: "ENFEF004", nombre: "Síntesis del proceso de formación profesional", requisitos: [] }
+  ]  
 };
+
 
 const malla = document.getElementById("malla");
 
